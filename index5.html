@@ -1,3 +1,5 @@
+<!-- Exercise: MyBlog, started 01/12/23, tweaked for submission on 01/25/23 -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,54 +9,79 @@
     <title>My Blog</title>
     <link rel="stylesheet" href="style5.css" />
   </head>
+
   <body>
-    <header>
-      <h1>This is the header of the page</h1>
-      <h2>This is the subheader apparently</h2>
-    </header>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/blog">Blog</a>
-      <a href="/contact">Contact</a>
-    </nav>
+    <table>
+      <tr>
+        <th>
+          <header id="home">
+            <h1>This is the header of the page</h1>
+            <h2>This is the subheader apparently</h2>
+          </header>
+        </th>
+
+        <td>
+          <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </td>
+      </tr>
+    </table>
     <hr />
-    <section>
-      <h2>About Me</h2>
-      <p>some <em>stuff</em> about <b>me</b></p>
-    </section>
-    <section>
-      <h2>Blog</h2>
-      <p>some <em>stuff</em> about <b>me</b></p>
-    </section>
-    <section>
-      <h2>Contact</h2>
-      <p>some <em>stuff</em> about <b>me</b></p>
-    </section>
+    <!-- <hr /> this puts the hr at the top of the page, adding two tables now puts the hr between the header, nav, and the sections -->
+    <!-- <section id="home">Top of Page</section> -->
+    <table>
+      <tr>
+        <!-- <td> -->
+        <section id="about">
+          <h2>About Me</h2>
+          <p>some <em>stuff</em> about <b>me</b></p>
+        </section>
+        <section id="blog">
+          <h2>Blog</h2>
+          <p>some more <em>stuff</em> about <b>me</b></p>
+        </section>
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>some <em>stuff</em> about reaching <b>me</b></p>
+        </section>
+        <!-- </td> -->
+      </tr>
+      <!-- </table> -->
 
-    <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXsLvG2XRM0Zmzj0qTog2uMXeW9CKdefPAtA&usqp=CAU"
-      alt="kitten and mama cat laying down"
-    />
-    <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGOWE6DDTWc5JBthNlsl9Hybzn3DjVVMq94w&usqp=CAU"
-      alt="various delicious foods"
-    />
+      <tr>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXsLvG2XRM0Zmzj0qTog2uMXeW9CKdefPAtA&usqp=CAU"
+          alt="kitten and mama cat laying down"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGOWE6DDTWc5JBthNlsl9Hybzn3DjVVMq94w&usqp=CAU"
+          alt="various delicious foods"
+        />
 
-    <br />
-    <br />
-    <a href="https://www.google.com/" alt="link to google website">Google</a>
+        <br />
+        <br />
+        <a href="https://www.google.com/" alt="link to google website"
+          >Google</a
+        >
+        <br />
+        <br />
 
-    <br />
-    <br />
-    <article>
-      <h3>Your invitation to tell us about 2022</h3>
-      <p>
-        And how some writers are already reflecting on the year — Somehow, we’ve
-        (almost) reached the end of the year. Whether you’ve just posted on
-        Medium for the first time or have been around these parts.
-      </p>
-    </article>
+        <article>
+          <h3>Your invitation to tell us about 2022</h3>
+          <p>
+            And how some writers are already reflecting on the year — Somehow,
+            we’ve (almost) reached the end of the year. Whether you’ve just
+            posted on Medium for the first time or have been around these parts.
+          </p>
+        </article>
+      </tr>
+    </table>
+
+    <hr />
 
     <footer>
       <a href="socialmedia.com">Facebook</a>
@@ -63,6 +90,7 @@
       <a href="socialmedia.com">GitHub</a>
       <div>copyright info</div>
       <address>some cool address of a fancy place</address>
+      <a href="#home">Top of Page</a>
     </footer>
   </body>
 </html>

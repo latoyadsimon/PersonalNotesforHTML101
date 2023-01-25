@@ -4,7 +4,7 @@ to get prettier to work, you must make a .prettierrc file and add and a brackets
 }
 -------------
 git init
-git add README.md
+git add -A
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/latoyadsimon/PersonalNotesforHTML101.git
