@@ -1,0 +1,23 @@
+/* nav {
+  padding: 0 10px;
+} */
+
+/* nav {
+  vertical-align: top;
+} */
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+/* table,
+th,
+td {
+  border: 1px solid black;
+} */
+
+td {
+  padding: 0.5em;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms and inputs</title>
+  </head>
+  <body>
+    <form>
+      <input type="text" />
+      <input type="number" />
+      <input type="checkbox" />
+      <input type="radio" />
+      <input type="submit" />
+      <input type="button" value="Click Me" />
+    </form>
+    <br /><br /><br />
+
+    <!-- <form action="/"> -->
+    <!-- <form target="_blank", "_self", "_parent", "_top"> -->
+    <form action="/action_page.php" target="_target" method="get">
+      <label for="firstName">First Name:</label><br />
+      <input id="firstName" type="text" /><br />
+      <label for="lastName">Last Name:</label><br />
+      <input id="lastName" type="text" /><br /><br />
+
+      <!-- name attribute is the same so that only one can be selected at a time -->
+      <input name="gender" id="Male" type="radio" value="Male" />
+      <label for="Male">Male</label><br />
+
+      <input name="gender" id="Female" type="radio" value="Female" />
+      <label for="Female">Female</label><br />
+
+      <input name="gender" id="Other" type="radio" value="Other" />
+      <label for="Other">Other</label><br />
+      <!-- You can wrap the input field inside of the label, this will help touch screen users -->
+      <!-- <label for="Male"><input name="gender" id="Male" type="radio">Male</label><br> -->
+
+      <h3>Hobbies</h3>
+      <!-- name attribute will be different so you can select more than one -->
+      <input
+        name="Skateboarding"
+        id="Skateboarding"
+        type="checkbox"
+        value="Skateboarding"
+      />
+      <label for="Skateboarding">Skateboarding</label><br />
+
+      <input name="Hunting" id="Hunting" type="checkbox" value="Hunting" />
+      <label for="Hunting">Hunting</label><br />
+
+      <input
+        name="Skydiving"
+        id="Skydiving"
+        type="checkbox"
+        value="Skydiving"
+      />
+      <label for="Skydiving">Skydiving</label><br />
+
+      <br /><br />
+      <label for="weaponClass">Call of Duty Weapon Class</label><br />
+      <select name="weaponClass" id="weaponClass">
+        <option value="sniper">Sniper</option>
+        <option value="assault" selected>Assault</option>
+        <option value="smg">SMG</option>
+        <option value="lmg">LMG</option>
+        <option value="shotgun">Shotgun</option>
+      </select>
+
+      <br /><br /><br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
