@@ -1,0 +1,149 @@
+<!-- 🏋️ Exercise: Registration Form completed on 01/25/23 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="registration.css" class="stylesheet" />
+    <title>🏋️ Exercise: Registration Form</title>
+  </head>
+  <body>
+    <form action="">
+      <header><h1>Registration Form</h1></header>
+      <hr />
+      <h2>Provide your information</h2>
+
+      <label for="name">Name*</label><br />
+      <input
+        type="text"
+        id="name"
+        placeholder="Name"
+        required
+        maxlength="30"
+      /><br />
+
+      <label for="email">Email*</label><br />
+      <input
+        type="email"
+        id="email"
+        placeholder="email"
+        required
+        maxlength="30"
+      /><br />
+
+      <label for="telephone">Telephone</label><br />
+      <input
+        type="tel"
+        id="telephone"
+        maxlength="3"
+        min="0"
+        max="9"
+        size="3"
+        placeholder="555"
+      />
+      <span>-</span>
+      <input
+        type="tel"
+        id="telephone"
+        maxlength="3"
+        min="0"
+        max="9"
+        size="3"
+        placeholder="555"
+      />
+      <span>-</span>
+      <input
+        type="tel"
+        id="telephone"
+        maxlength="4"
+        min="0"
+        max="9"
+        size="4"
+        placeholder="5555"
+      /><br /><br />
+
+      <label for="dob">DOB*</label><br />
+      <input type="date" id="dob" name="dob" required /><br />
+
+      <label for="gender">Gender</label><br />
+
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="male">Male</label>
+
+      <input type="radio" name="gender" id="female" />
+      <label for="female">Female</label>
+
+      <input type="radio" name="gender" id="other" />
+      <label for="other">Other</label>
+      <br /><br />
+
+      <label for="Household">Household Size</label><br />
+      <input
+        type="number"
+        id="Household"
+        name="Household"
+        value=""
+        min="1"
+        max="99"
+        maxlength="2"
+        size="2"
+      />
+      <br />
+
+      <label for="income">Annual Income</label><br />
+      <select id="income" name="income">
+        <option value="lessThan40k">Less than $40k</option>
+        <option value="moreThan40k">More than $40k</option>
+        <option value="lessThan20k">Less than $20k</option>
+      </select>
+      <br />
+      <br />
+      <br />
+
+      <label for="Message">Message</label><br />
+      <textarea name="Message" id="Message" cols="30" rows="4" maxlength="140">
+add message here...
+      </textarea>
+      <br />
+      <br />
+      <br />
+
+      <label for="password">Password*</label><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="password"
+        required
+      />
+      <br />
+      <label for="confirmPassword">Confirm Password*</label>
+      <br />
+      <input
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+        placeholder="confirm password"
+        required
+      />
+      <br />
+      <br />
+      <br />
+
+      <input type="checkbox" id="terms" name="terms" required />
+      <label for="terms"
+        >By signing up, you agree to the
+        <span><a href="/terms"> Terms of Service</a></span></label
+      >
+      <br />
+      <br />
+      <br />
+
+      <button type="submit" name="submit">Submit</button>
+      <br />
+      <br />
+    </form>
+  </body>
+</html>
